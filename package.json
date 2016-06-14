@@ -1,0 +1,11 @@
+{
+  "name": "geoblink-challenge",
+  "version": "1.0.0",
+  "description": "Geoblink Codechallenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marta Fonda",
+  "license": "MIT"
+}
