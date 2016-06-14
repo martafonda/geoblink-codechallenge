@@ -48,5 +48,53 @@ chart.factory('chart', ['$http', function ($http) {
     }
   };
 }]);
+//Controller
+chart.controller('chartCtrl',['$scope','chart',
+
+  function ($scope, chart) {
+    $scope.datas = [];
+
+    $scope.color = function(index){
+      if(index===0){
+        return "#5Ab1BB";
+      }else if(index===1){
+        return "#F7DD72";
+      }else{
+        return "#225E65";
+      }
+    };
+
+    chart.getData()
+      .success(function (res) {
+        if (res.error) {
+          throw new Error(res.message);
+        } else {
+          $scope.datas = res;
+          var result = [];
+          res.forEach(function(element){
+
+            chart.classNameDenomination(result,element);
+            chart.arrayConstruction(result[result.length-1],element);
+
+            return result;
+          })
+          var conf = {
+
+          }
+          RadarChart.draw(".chart-container", result);
+        }
+      });
+
+  }
+]);
+
+//Directive
+chart.directive('radarChart', function () {
+
+    return {
+      templateUrl: '../templates/radarChart.html',
+      restrict: 'E'
+    };
+});
 
 })();

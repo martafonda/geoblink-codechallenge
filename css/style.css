@@ -89,3 +89,28 @@ footer {
     border: 0;
     height: 2px;
     background: #225E65; }
+
+.chart-container {
+  padding-top: 40px;
+  width: 80%;
+  margin: 0 auto; }
+  .chart-container section {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto; }
+    .chart-container section article {
+      display: inline-block;
+      width: 33%;
+      margin: 0 auto; }
+    .chart-container section span {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      margin-right: 10px; }
+    .chart-container section p {
+      width: 100%;
+      text-align: center;
+      display: inline-block; }
+  .chart-container svg {
+    margin-top: 40px;
+    margin-left: 25%; }

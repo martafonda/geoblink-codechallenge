@@ -1,0 +1,8 @@
+<div class="chart-container" id="viz">
+  <section>
+    <article ng-repeat="data in datas">
+      <p ><span style="background-color:{{color($index)}}"></span>{{ data.variables.is_reference == true ? "REFERENCE AREA" : "COMPARED AREA " + $index }}
+      </p>
+      </article>
+  </section>
+</div>

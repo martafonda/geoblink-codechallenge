@@ -6,13 +6,17 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
- <link rel="stylesheet" href="css/reset.css">
- <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/radar-chart.css">
+  <link rel="stylesheet" href="css/style.css">
 
-<script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/d3/d3.js"></script>
 
+  <script src="js/chart.js"></script>
+  <script src="js/radarChart.js"></script>
   <script src="js/contentBlock.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </head>
 <body>
@@ -28,7 +32,7 @@
     </article>
   </section>
 
-
+  <radar-chart ng-controller="chartCtrl"></radar-chart>
 
   <footer>
     <p>Made with <span class="love"><3</span> by <a href="https://twitter.com/martafonda" target="_blank">Marta Fonda</a></p>

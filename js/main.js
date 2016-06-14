@@ -1,1 +1,1 @@
-var app = angular.module('app',['contentBlock']);
+var app = angular.module('app',['contentBlock', 'chart']);
