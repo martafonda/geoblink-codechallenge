@@ -9,6 +9,8 @@
   "author": "Marta Fonda",
   "license": "MIT",
   "devDependencies": {
-    "gulp-sass": "^2.3.1"
+    "gulp-sass": "^2.3.1",
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^1.2.1"
   }
 }
