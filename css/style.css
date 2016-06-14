@@ -35,3 +35,57 @@ footer {
       color: #ffffff; }
     footer p a:hover {
       text-decoration: none; }
+
+.contentblock__container {
+  width: 100%;
+  background-color: #f1f3ef; }
+  .contentblock__container article {
+    overflow: hidden;
+    width: 92%;
+    margin: 0 auto; }
+
+.contentblock__box {
+  width: 33%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  float: left;
+  color: #dec666; }
+  .contentblock__box h3 {
+    font-weight: bold;
+    font: 150% "Poiret One", sans-serif;
+    margin-bottom: 10px; }
+  .contentblock__box .contentblock__box__population {
+    background-color: #dec666;
+    color: #ffffff;
+    padding: 10px; }
+    .contentblock__box .contentblock__box__population p {
+      font: 200% "Poiret One", sans-serif; }
+  .contentblock__box .contentblock__box__address {
+    min-height: 60px;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto; }
+  .contentblock__box hr {
+    border: 0;
+    height: 2px;
+    background: #dec666; }
+
+.contentblock__box:first-child {
+  color: #5Ab1BB; }
+  .contentblock__box:first-child .contentblock__box__population {
+    background-color: #5Ab1BB;
+    color: #ffffff; }
+  .contentblock__box:first-child hr {
+    border: 0;
+    height: 2px;
+    background: #5Ab1BB; }
+
+.contentblock__box:last-child {
+  color: #225E65; }
+  .contentblock__box:last-child .contentblock__box__population {
+    background-color: #225E65;
+    color: #ffffff; }
+  .contentblock__box:last-child hr {
+    border: 0;
+    height: 2px;
+    background: #225E65; }

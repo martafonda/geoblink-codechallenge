@@ -11,6 +11,7 @@
 
 <script src="bower_components/angular/angular.js"></script>
 
+  <script src="js/contentBlock.js"></script>
 <script src="js/main.js"></script>
 
 </head>
@@ -20,6 +21,12 @@
       <img src="image/logo_light.png" alt="">
     </div>
   </header>
+
+   <section ng-controller="ContentBlockCtrl" class="contentblock__container">
+    <article>
+      <content-block ng-repeat="data in datas" class="contentblock__box text center"></content-block>
+    </article>
+  </section>
 
 
 
