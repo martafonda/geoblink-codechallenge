@@ -1,0 +1,21 @@
+{
+  "name": "geoblink-codechallenge",
+  "version": "1.0.0",
+  "authors": [
+    "Marta Fonda <martafondapascual@gmail.com>"
+  ],
+  "description": "Geoblink Code Challenge",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.6"
+  }
+}

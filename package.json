@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marta Fonda",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-sass": "^2.3.1"
+  }
 }
