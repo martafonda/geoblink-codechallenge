@@ -61,7 +61,7 @@ footer {
     .contentblock__box .contentblock__box__population p {
       font: 200% "Poiret One", sans-serif; }
   .contentblock__box .contentblock__box__address {
-    min-height: 60px;
+    min-height: 80px;
     padding: 10px;
     width: 80%;
     margin: 0 auto; }
@@ -114,3 +114,22 @@ footer {
   .chart-container svg {
     margin-top: 40px;
     margin-left: 25%; }
+
+@media screen and (max-width: 1000px) and (min-width: 320px) {
+  .contentblock__container article {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px; }
+    .contentblock__container article .contentblock__box {
+      width: 80%;
+      float: none; }
+      .contentblock__container article .contentblock__box div {
+        margin-bottom: 40px; }
+        .contentblock__container article .contentblock__box div .contentblock__box__address {
+          min-height: 15px; }
+  .chart-container section article {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px; }
+  .chart-container svg {
+    margin-left: 0%; } }

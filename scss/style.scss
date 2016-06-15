@@ -7,6 +7,12 @@ $yellow: #F7DD72;
 $yellow-dark: #dec666;
 $light-blue: #5Ab1BB;
 $dark-blue: #225E65;
+
+$small: 320px;
+$large: 1000px;
+
+
+
 body {
   font: 100% $font-stack;
   color: $dark-color;
@@ -84,7 +90,7 @@ footer{
     }
   }
   .contentblock__box__address{
-    min-height: 60px;
+    min-height: 80px;
     padding: 10px;
     width: 80%;
     margin: 0 auto;
@@ -152,4 +158,37 @@ footer{
     margin-top: 40px;
     margin-left: 25%;
   }
+}
+
+
+@media screen and (max-width: $large) and (min-width: $small) {
+  .contentblock__container{
+    article{
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 20px;
+      .contentblock__box{
+        width: 80%;
+        float: none;
+        div{
+          margin-bottom: 40px;
+          .contentblock__box__address{
+            min-height: 15px;
+          }
+        }
+      }
+    }
+  }
+.chart-container{
+  section{
+    article{
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+  svg{
+    margin-left: 0%;
+  }
+}
 }

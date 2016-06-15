@@ -26,7 +26,7 @@ gulp.task('serve', function() {
 gulp.task('build-css', function () {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./scss'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('build-css:watch', function () {
