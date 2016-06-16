@@ -4,8 +4,10 @@ describe('Chart', function(){
   //Testing Controller
   describe('chartCtrl',function(){
 
-    beforeEach(inject(function(_$controller_){
+    beforeEach(inject(function(_$controller_,  _$httpBackend_, chart){
       $controller = _$controller_;
+      service_name = chart;
+      $httpBackend =  _$httpBackend_;
     }));
 
     //Testing method color
@@ -35,6 +37,50 @@ describe('Chart', function(){
         expect($scope.color(index)).toEqual('#225E65');
       });
 
+    });
+
+    //Testing requesting URL
+    describe('request URL ', function(){
+      var data = "hola";
+      it('should have a getData function', function() {
+        expect(angular.isFunction(service_name.getData)).toBe(true);
+      });
+
+      it('getData function should return data object if http request is successful', function() {
+        var expectedData = data;
+        var url = './server/data.json?callback=json_callback&format=json&method=chart.getData';
+        $httpBackend.expectGET(url)
+          .respond(expectedData);
+
+        var actualResult;
+        service_name.getData().then(function(response) {
+          actualResult = response.data;
+        });
+        $httpBackend.flush();
+
+        expect(actualResult).toEqual(expectedData);
+      });
+
+      it('should demonstrate using when (200 status)', inject(function($http) {
+
+        var $scope = {};
+        var url = './server/data.json?callback=json_callback&format=json&method=chart.getData';
+
+        $http.get(url)
+          .success(function(data, status, headers, config) {
+            $scope.fooData = data;
+          });
+
+        $httpBackend
+          .when('GET', function(url) {
+            return url.indexOf(url) !== -1;
+          })
+          .respond(200, { data: 'value' });
+
+        $httpBackend.flush();
+
+        expect($scope.fooData.data).toEqual("value");
+      }));
     });
   });
 
