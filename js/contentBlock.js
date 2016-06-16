@@ -36,7 +36,7 @@ contentBlock.controller('ContentBlockCtrl',['$scope','contentBlock',
 //Directive
 contentBlock.directive('contentBlock', function () {
     return {
-      templateUrl: '../templates/contentBlock.html',
+      templateUrl: 'templates/contentBlock.html',
       restrict: 'E'
     };
 });

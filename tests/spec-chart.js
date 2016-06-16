@@ -1,12 +1,14 @@
 describe('Chart', function(){
   beforeEach(module('chart'));
+
+  //Testing Controller
   describe('chartCtrl',function(){
 
     beforeEach(inject(function(_$controller_){
       $controller = _$controller_;
     }));
 
-    //Testing Controller
+    //Testing method color
     describe('$scope.color', function(){
 
       it('sets color #5Ab1BB to the area 0 of the chart', function() {
