@@ -62,7 +62,6 @@ describe('Chart', function(){
       });
 
       it('should demonstrate using when (200 status)', inject(function($http) {
-
         var $scope = {};
         var url = './server/data.json?callback=json_callback&format=json&method=chart.getData';
 
