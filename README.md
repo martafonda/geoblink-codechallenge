@@ -7,25 +7,33 @@ Welcome to this code-challenge from Geoblink
 
 ## Clone Repository and Install Dependencies
 
-1. Clone it!
+Clone it!
+
+Once you are inside the folder install npm dependencies. You will need npm and node installed in your computer.
+
+  `npm install`
+
+Install bower dependencies. You will need bower installed in your computer.
+
+  `bower install`
 
 
-2. Once you are inside the folder install npm dependencies. You will need npm and node installed in your computer.
+Run Gulp task. You will need Gulp installed in your computer.
 
-    `npm install`
-
-3. Install bower dependencies. You will need bower installed in your computer.
-
-    `bower install`
+   `gulp build`
 
 
-4. Run Gulp task. You will need Gulp installed in your computer.
+A window from your favourite browser will be opened with the "http://localhost:9090" url.
 
-    `gulp build`
+##Tests
 
+To run your test from your terminal you will need karma installed
 
-A window from your favourite browser will be opened with the "http://localhost:9090" url. You will see this webpage.
+  `npm install -g karma-cli`
 
+and then run
+
+  `karma start`
 
 ![](http://s31.postimg.org/6flt1lzy3/landing.jpg)
 
