@@ -92,7 +92,7 @@ chart.controller('chartCtrl',['$scope','chart',
 chart.directive('radarChart', function () {
 
     return {
-      templateUrl: '../templates/radarChart.html',
+      templateUrl: 'templates/radarChart.html',
       restrict: 'E'
     };
 });

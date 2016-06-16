@@ -6,6 +6,7 @@ describe('Chart', function(){
       $controller = _$controller_;
     }));
 
+    //Testing Controller
     describe('$scope.color', function(){
 
       it('sets color #5Ab1BB to the area 0 of the chart', function() {
@@ -33,9 +34,25 @@ describe('Chart', function(){
       });
 
     });
+  });
 
+  //Testing Directive
+  describe('Radar Chart directive', function() {
+    var $compile, $rootScope, element, $scope;
 
+    beforeEach(module('chart'));
+    beforeEach(module('templates/radarChart.html'));
 
+    beforeEach(inject(function($compile, $rootScope){
+      $scope = $rootScope.$new();
+      element = angular.element("<radar-chart></radar-chart>");
+      $compile(element)($rootScope);
+      $rootScope.$digest();
+    }));
+
+    it('Replaces the element with the appropriate content', function() {
+      expect(element.html()).toContain("chart-container");
+    });
   });
 
 });
